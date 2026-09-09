@@ -1,0 +1,31 @@
+# VCS + local tooling
+.git
+.github
+.claude
+.claude-flow
+.claude-worktrees
+.vscode
+.playwright-mcp
+
+# Node / Python build artefacts (regenerated inside the image)
+node_modules
+desk/node_modules
+desk/dist
+desk/stats.html
+desk/components.d.ts
+frappe-ui
+**/__pycache__
+*.pyc
+*.egg-info
+.eggs
+
+# Built assets — the image rebuilds these from source
+helpdesk/public/desk
+helpdesk/public/frontend
+helpdesk/public/node_modules
+helpdesk/www/helpdesk/index.html
+
+# Misc
+*.log
+.DS_Store
+screenshot.webp

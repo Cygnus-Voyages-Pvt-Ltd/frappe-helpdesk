@@ -132,6 +132,14 @@ Replace the following parameters with your values:
 
 The script will set up a production-ready instance of Frappe Helpdesk with all the necessary configurations in about 5 minutes.
 
+#### Railway
+
+A single-service Railway deployment (nginx + gunicorn + socket.io + workers in one
+container) ships in this repo: point Railway at the root `Dockerfile`, add MariaDB,
+and set `DB_HOST`, `DB_ROOT_PASSWORD` and `ADMIN_PASSWORD`. See
+[deployment.md](deployment.md) for the step-by-step walkthrough, and
+[docker/railway/README.md](docker/railway/README.md) for the variable and file reference.
+
 ## Development Setup
 
 ### Docker
